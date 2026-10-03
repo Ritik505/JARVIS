@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const visualizerCanvas = document.getElementById('visualizer');
 
 
-    const GOOGLE_API_KEY = 'API_KEY';
+    const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 
     // Current Gemini model.
     // Google currently documents gemini-3.5-flash for GenerateContent.
