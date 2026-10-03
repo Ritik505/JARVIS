@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.A.R.V.I.S - AI Core</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="scanline"></div>
+
+        <header class="header">
+            <h1>J.A.R.V.I.S.</h1>
+            <p> Intelligent System</p>
+        </header>
+
+        <div class="chat-container">
+            <div id="chat-log" class="chat-log">
+                <!-- Chat messages will appear here -->
+            </div>
+        </div>
+
+        <div class="ai-core-container">
+            <div id="ai-core" class="ai-core state-idle">
+                <div class="core-ring core-ring-1"></div>
+                <div class="core-ring core-ring-2"></div>
+                <div class="core-ring core-ring-3"></div>
+                <i id="mic-icon" class="fa-solid fa-microphone"></i>
+            </div>
+            <p id="status-display">IDLE</p>
+        </div>
+
+        <div class="visualizer-container">
+            <canvas id="visualizer"></canvas>
+        </div>
+
+        <div class="settings-container">
+            <p>Response Language:</p>
+            <div class="toggle-switch">
+                <button id="lang-en" class="lang-btn" data-lang="English">English</button>
+                <button id="lang-hi" class="lang-btn" data-lang="Hindi">Hindi</button>
+                <button id="lang-hinglish" class="lang-btn active" data-lang="Hinglish">Hinglish</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
